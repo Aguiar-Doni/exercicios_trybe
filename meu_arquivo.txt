@@ -1,0 +1,3 @@
+Exercicio de repositório git da trybe
+No caminho para me tornar um desenvolverdor junior
+Meu primeiro resositório Git
