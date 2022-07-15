@@ -1,7 +1,6 @@
 Unix 
 Bash
 Git
-Java Script 
-DOM
-React 
-Phyton
+
+
+
