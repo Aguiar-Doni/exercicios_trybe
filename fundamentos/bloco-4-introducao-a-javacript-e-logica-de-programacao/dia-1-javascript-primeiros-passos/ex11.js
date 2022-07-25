@@ -25,7 +25,7 @@
 //Resultado: R$ 2.612,55
 //Dica: que tal identificar as alíquotas com variáveis de nomes explicativos?
 
-const salarioBruto = 6000;
+const salarioBruto = 200000;
 let descontoInss;
 let salarioBase;
 let salarioIR;
