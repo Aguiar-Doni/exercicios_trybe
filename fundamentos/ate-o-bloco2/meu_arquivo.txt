@@ -1,6 +1,0 @@
-Exercicio de repositório git da trybe
-No caminho para me tornar um desenvolverdor junior
-Meu primeiro resositório Git
-alteração1
-Segundo commit com alterações 
-Uso do comando push para atualizar meu repositorio github
