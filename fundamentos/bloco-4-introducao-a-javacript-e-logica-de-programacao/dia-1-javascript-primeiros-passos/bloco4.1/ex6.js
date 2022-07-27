@@ -3,12 +3,12 @@
 //Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case).
 //Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
 
-const pecaDeXadrez = 'bispo'
+const pecaDeXadrez = "bispo";
 
-switch(pecaDeXadrez) {
-    case 'bispo' :
-        console.log('verticais');
-        break
-        default :
-        console.log('algo deu errado')
+switch (pecaDeXadrez) {
+  case "bispo":
+    console.log("verticais");
+    break;
+  default:
+    console.log("algo deu errado");
 }
