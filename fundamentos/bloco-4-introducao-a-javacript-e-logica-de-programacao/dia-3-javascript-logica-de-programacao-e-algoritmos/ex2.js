@@ -7,7 +7,7 @@
 //3-criar um laço usando o comando for que percorra toda minha string declarada;
 //4-dentro do meu laço for que vai incrementar minha nova variavel com o indice invertido;
 
-let word = "caralho"; //1.
+let word = "arara"; //1.
 let wordNew = ""; //2.
 for (index = 0; index < word.length; index += 1) {
   //3.
