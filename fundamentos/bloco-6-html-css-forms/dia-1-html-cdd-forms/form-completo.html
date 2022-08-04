@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>FORMULÁRIO COMPLETO</h1>
+    <form action="" method="get" enctype="multipart/form-data"></form>
+    <label for="nome-completo">Nome completo:
+        <input type="text" name="nome" id="nome-completo" placeholder="digite seu nome" required>
+    </label>
+    <br>
+    <br>
+    <label for="input-email">E-mail:
+        <input type="email" name="email" id="input-email" placeholder="digite seu email" required>
+    </label>
+    <br>
+    <br>
+    <label for="">Estado onde você mora:
+        <select name="estado" id="input-estado">
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="SC">Balneario Camburiu</option>
+            <option value="MT">Mato Grosso</option>
+        </select>
+    </label>
+    <br>
+    <br>
+    <p>Selecione sua foto:</p>
+    <input type="file" name="foto" id="file-perfil">
+    <br>
+    <br>
+    <p>Comidas favoritas:</p>
+    <label for="comida1">
+        <input type="radio" id="comida1" name="comida-favorita" value="pizza">pizza
+    </label>
+    <label for="comida2">
+        <input type="radio" id="comida2" name="comida-favorita" value="pastel">pastel
+    </label>
+    <label for="comida3">
+        <input type="radio" id="comida3" name="comida-favorita" value="strogonof">strogonof
+    </label>
+    <label for="comida4">
+        <input type="radio" id="comida4" name="comida-favorita" value="outro">outro
+    </label>
+    <br>
+    <br>
+    <p>Escreva algo sobre você:</p>
+    <br>
+    <textarea name="sobre-voce" id="textarea1" cols="30" rows="5"></textarea>
+    <br>
+    <br>
+    <p>Digite sua senha:</p>
+    <label for="input-password">
+        <input type="password" name="senha" id="input-password" required>
+    </label>
+    <br>
+    <br>
+    <label for="checkbox-promocoes">
+        <input type="checkbox" name="promocoes" id="checkbox-promocoes">Deseja receber novas promoções inperdiveis?
+    </label>
+    <br>
+    <button type="submit">Enviar formulario</button>
+    <form>
+
+
+</body>
+
+</html>
