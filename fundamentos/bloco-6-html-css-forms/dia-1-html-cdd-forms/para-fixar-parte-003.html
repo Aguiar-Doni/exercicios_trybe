@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Para fixar forms completo</title>
+</head>
+
+<body>
+    <h1>FORMULÁRIO COMPLETO</h1>
+    <form action="" method="get" enctype="multipart/form-data">
+        <label for="nome-completo">Nome completo:
+            <input type="text" name="name" id="nome-completo" placeholder="digite seu nome" autocomplete="off" required>
+        </label>
+
+        <br>
+        <br>
+
+        <label for="input-email">E-mail:
+            <input type="email" name="email" id="input-email" placeholder="digite seu email" autocomplete='off'
+                required>
+        </label>
+
+        <br>
+        <br>
+
+        <label for="input-estado">Estado onde você mora:
+            <select name="Estado" id="input-estado">
+                <option value="sp" selected>São Paulo</option>
+                <option value="pr">Parana</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="ba">Bahia</option>
+                <option value="mg">Minas gerais</option>
+            </select>
+        </label>
+
+        <br>
+        <br>
+
+        <p>Selecione sua foto:</p>
+        <input type="file" name="foto" id="foto-perfil">
+
+        <br>
+        <p>Comidas favoritas:</p>
+        <label for="comida-1">
+            <input type="radio" id="comida-1" name="comida-favorita" value="pizza">pizza
+        </label>
+        <label for="comida-2">
+            <input type="radio" id="comida-2" name="comida-favorita" value="pastel">pastel
+        </label>
+        <label for="comida-3">
+            <input type="radio" id="comida-3" name="comida-favorita" value="cuzcuz">cuzcuz
+        </label>
+        <label for="comida-4">
+            <input type="radio" id="comida-4" name="comida-favorita" value="outros" checked>outros
+        </label>
+        <br>
+        <p>Escreva algo sobre você:</p>
+        <textarea name="sobre-mim" id="textarea1" cols="30" rows="5"></textarea>
+        <br>
+        <label for="input-senha">Digite sua senha:
+            <br>
+            <input type="password" name="senha" id="input-senha">
+        </label>
+        <br>
+        <label for="checkbox-novidades">
+            <input type="checkbox" name="promocoes" id="checkbox-novidades">Deseja receber novidades e promoções
+            excluisvas?
+        </label>
+        <br>
+        <button type="submit">Enviar formulario</button>
+    </form>
+</body>
+
+</html>

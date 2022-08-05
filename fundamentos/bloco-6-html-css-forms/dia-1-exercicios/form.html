@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Exercicio dia 6.1</title>
+</head>
+
+<body>
+    <h1>Concorra a uma viagem incrivel com a TRYBE TRIPS</h1>
+    <br>
+    <main id='container'>
+
+        <form action="">
+            <br>
+
+            <fieldset class='fieldsets'>
+                <label class='labels' for="input-name"> Nome:
+                    <br>
+                    <input type="text" name="name" id="input-name" placeholder="Digite seu nome..." maxlength="40"
+                        required>
+                </label>
+
+                <br>
+                <br>
+
+                <label class='labels' for="input-email">E-mail:
+                    <br>
+                    <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail..." maxlength="50"
+                        required>
+                </label>
+            </fieldset>
+
+            <br>
+            <br>
+
+            <label for="input-destiny">
+                <input type="radio" name="destiny" id="input-destiny1" value="cidade">Cidade
+            </label>
+            <label for="input-destiny2">
+                <input type="radio" name="destiny" id="input-destiny2" value="campo">Campo
+            </label>
+            <label for="input-destiny3">
+                <input type="radio" name="destiny" id="input-destiny3" value="praia" checked>Praia
+            </label>
+            <label for="input-destiny4">
+                <input type="radio" name="destiny" id="input-destiny4" value="montanha">Montanha
+            </label>
+
+            <br>
+            <br>
+
+            <fieldset>
+                <textarea name="porque devo ganhar" id="myText" cols="30" rows="10" maxlength="500"
+                    placeholder="Digite aqui porque você merece ganhar essa viagem incrìvel...."></textarea>
+            </fieldset>
+
+            <br>
+
+            <label class='labels' for="date"></label>Data:
+            <fieldset>
+                <input type="date" name="data" id="date">
+            </fieldset>
+
+            <br>
+            <br>
+
+            <label for="input-promocoes">
+                <input type="checkbox" name="promocoes" id="input-promocoes">Gostaria de receber outras incríveis
+                oportunidades oferecidas pela Trybe?
+            </label>
+            <br>
+            <label for="input-imagem">
+                <input type="checkbox" name="imagem" id="input-imagem" required>Concordo que imagens das minhas férias
+                poderão ser usadas na divulgação de concursos futuros.
+            </label>
+
+            <br>
+            <br>
+            <button class='button' type="submit" id="myButton">Enviar forms</button>
+            <br>
+            <br>
+            <button class='button' type="button" id="clear">Limpar dados</button>
+
+        </form>
+    </main>
+
+
+    <script src="form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+h1 {
+    position: relative;
+    top: 150px;
+    text-align: center;
+    background-color: #19274e;
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#container {
+    position: relative;
+    top: 150px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    background-color: #536d88;
+    border-radius: 15px;
+}
+
+.labels {
+    background-color: silver;
+
+}
+
+.fieldsets {
+
+    width: 80%;
+    margin: auto;
+    background-color: silver;
+    border-radius: 15px;
+}
+
+body {
+    background-image: url(/tropical-dark-trend-jungle-neon-illuminated-lighting-exotic-palms-plants-retro-style_124595-1127.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
