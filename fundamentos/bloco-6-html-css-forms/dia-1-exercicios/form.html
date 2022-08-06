@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.css">f
     <title>Exercicio dia 6.1</title>
 </head>
 
@@ -53,7 +53,7 @@
             <br>
             <br>
 
-            <fieldset>
+            <fieldset class='fieldsets'>
                 <textarea name="porque devo ganhar" id="myText" cols="30" rows="10" maxlength="500"
                     placeholder="Digite aqui porque você merece ganhar essa viagem incrìvel...."></textarea>
             </fieldset>
@@ -61,7 +61,7 @@
             <br>
 
             <label class='labels' for="date"></label>Data:
-            <fieldset>
+            <fieldset class='fieldsets'>
                 <input type="date" name="data" id="date">
             </fieldset>
 
@@ -77,16 +77,18 @@
                 <input type="checkbox" name="imagem" id="input-imagem" required>Concordo que imagens das minhas férias
                 poderão ser usadas na divulgação de concursos futuros.
             </label>
-
-            <br>
-            <br>
-            <button class='button' type="submit" id="myButton">Enviar forms</button>
-            <br>
-            <br>
-            <button class='button' type="button" id="clear">Limpar dados</button>
-
-        </form>
+            <section>
+                <button class='button1' type="submit" id="submitButton" disabled>Enviar forms</button>
+                <br>
+                <br>
+                <button class='button2' type="button" id="clear">Limpar dados</button>
+            </section>
     </main>
+
+    <br>
+    <br>
+
+    </form>
 
 
     <script src="form.js"></script>
