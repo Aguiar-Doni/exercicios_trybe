@@ -2,6 +2,7 @@ let descontoInss;
 let salarioBase;
 let salarioIR;
 let iR;
+let salarioBruto; // precisa ser declarado o valor para calcular
 
 //DEDUZINDO INSS
 
