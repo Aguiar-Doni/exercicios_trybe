@@ -25,6 +25,48 @@ const handleImc = (wigth, heigth) => {
 // SEPARANDO FUNÇÕES PARA DIMINUIR A COMPLEXIDADE, UMA FUNÇÃO CALCULA
 // A OUTRA CHAMA ESSA FUNÇÃO QUE CALCULA PASSANDO PARAMETROS E TRATANDO OS DADOS A SEREM EXIBIDOS
 
+
+const IMC_MAX_AND_MIN = {
+    'Underweight': {
+      minIMC: 0,
+      maxIMC: 18.4,
+    },
+    'Normal Weight': {
+      minIMC: 18.5,
+      maxIMC: 24.9,
+    },
+    'Overweight': {
+      minIMC: 25,
+      maxIMC: 29.9,
+    },
+    'Obese Class I': {
+      minIMC: 30.0,
+      maxIMC: 34.9,
+    },
+    'Obese Class II': {
+      minIMC: 35,
+      maxIMC: 39.9,
+    },
+    'Obese Class III': {
+      minIMC: 40,
+      maxIMC: 100, // Um valor default máximo qualquer, impossível de alcançar no imc.
+    },
+  };
+
+
+// 5- 🚀 Vamos sofisticar um pouco mais nosso exercício. Além de imprimir o IMC na tela, imprima também em qual categoria da tabela abaixo aquele IMC se enquadra.
+
+const handleImcResult = (imc) => {
+  const status = Object.keys(IMC_MAX_AND_MIN);
+  
+  const result = status.find((status) => {
+    const { maxIMC, minIMC } = IMC_MAX_AND_MIN[status] // acessamos as informações do intervalo da situação iterada
+    // caso esteja dentro do intervalo, significa que encontramos a situação apropriada
+    return imc >= minIMC && imc <= maxIMC;
+  });
+  return result;
+};
+
 const mainImc = () => {
 // 3- 🚀 Chegou a hora de tornar nosso código mais interativo! Vamos adicionar inputs de entrada para quem usar.
 // NECESSARIO INSTALAR O PACOTE readline-sync => npm i --save-exact readline-sync@1.4.10
@@ -38,8 +80,11 @@ const mainImc = () => {
     const weight = readline.questionFloat('What\'s your weight? (kg) ');
     const height = readline.questionInt('What\'s your height? (cm) ');
 
-    const bmi = handleImc(weight, height);
-    console.log(`IMC: ${bmi.toFixed(2)}`);
+    const imc = handleImc(weight, height);
+    const imcResult = handleImcResult(imc);
+
+    console.log(`IMC: ${imc.toFixed(2)}`);
+    console.log(imcResult);
 };
 mainImc();
 
