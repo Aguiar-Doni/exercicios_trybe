@@ -2,12 +2,14 @@
 
 list = ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]
 
+
 def find_biggest(list_of_names):
     biggest_name = list_of_names[0]
     for index_name in list_of_names:
         if len(index_name) > len(biggest_name):
             biggest_name = index_name
     return biggest_name
+
 
 result = find_biggest(list)
 print(result)

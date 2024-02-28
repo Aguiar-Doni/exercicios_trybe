@@ -2,8 +2,10 @@
 
 number = 5
 
+
 def draw_square(n):
     for row in range(n):
-        print(n * '*')
+        print(n * "*")
+
 
 result = draw_square(number)
