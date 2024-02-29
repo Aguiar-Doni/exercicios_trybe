@@ -2,6 +2,7 @@
 import random
 from write_words import generate_list
 
+
 # função para embaralhar palavra sugerida no exercicio
 def word_scramble(word):
     return "".join(random.sample(word, len(word)))
@@ -16,7 +17,7 @@ def scrambled_word_game():
     generate_list()
 
     # Ler o arquivo gerado
-    with open('programing_words.txt', 'r') as file:
+    with open("programing_words.txt", "r") as file:
         list_of_words = [line.strip() for line in file]
 
     # uma palavra vai ser escolhida aleatoriamente
@@ -48,5 +49,6 @@ def scrambled_word_game():
         print("Resposta incorreta, vai estudar mais cara\n")
 
     print(f"\nVocê perdeu! A palavra correta era: {selected_word}")
+
 
 scrambled_word_game()
