@@ -1,6 +1,6 @@
 # importar o metodo random sugerido no exercicio -> nativo do python
 import random
-
+from write_words import generate_list
 
 # função para embaralhar palavra sugerida no exercicio
 def word_scramble(word):
@@ -12,13 +12,13 @@ def word_scramble(word):
 
 
 def scrambled_word_game():
-    list_of_words = [
-        "python",
-        "javascript",
-        "back-end",
-        "front-end",
-        "ciencias-da-computacao",
-    ]
+    # Gerar a lista de palavras
+    generate_list()
+
+    # Ler o arquivo gerado
+    with open('programing_words.txt', 'r') as file:
+        list_of_words = [line.strip() for line in file]
+
     # uma palavra vai ser escolhida aleatoriamente
     selected_word = random.choice(list_of_words)
     # deverá essa palavra ser embaralhada
@@ -36,7 +36,7 @@ def scrambled_word_game():
     # Deve ter uma entrada para pessoa fazer a tentativa
     # O jogo deve encerrar assim que ela acertar ou continuar ate acabar as 3 tentativas
 
-    for index in range(attempts):
+    for _index in range(attempts):
         user_attempts = input("Escreva aqui sua tentativa: ").lower()
 
         # condição de parada
